@@ -50,8 +50,8 @@ class IFrameIOTestCase extends TestCase {
     window1 = Quirks.getIframeWindow(iframe1);
     window2 = Quirks.getIframeWindow(iframe2);
     
-    iframeIO1 = new IFrameIOAutoDetect(window1);
-    iframeIO2 = new IFrameIOAutoDetect(window2);
+    iframeIO1 = new IFrameIOAutoDetect(window1, "foo");
+    iframeIO2 = new IFrameIOAutoDetect(window2, "foo");
   }
   
   override public function afterAll(): Void {
